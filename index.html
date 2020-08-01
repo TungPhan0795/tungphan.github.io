@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width = device-width, initial-scale = 1">
+        <link rel="stylesheet" type="text/css" href="menu.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script>
+            document.addEventListener("DOMContentLoaded",function(){
+            var nut = document.querySelector('div.icon i');
+            var mobile = document.querySelector('ul');
+            nut.addEventListener('click',function(){
+                mobile.classList.toggle('active');
+            })
+        })
+        </script>
+
+    </head>
+    <body>
+        <div class="sidebar">
+            <div class="logo"><h3>LOGO</h4></div>
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">LINK 1</a>
+                            <ul class="cap_2">
+                                <li><a href="#">link 1a</a></li>
+                                <li><a href="#">link 2a</a></li>
+                                <li><a href="#">link 3a</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">LINK 2</a></li>
+                        <li><a href="#">LINK 3</a></li>
+                        <li><a href="#">LINK 4</a></li>
+                    </ul>
+                    <div class="icon">
+                        <i class="fa fa-tasks"></i>
+                    </div>
+                </nav>              
+            </div>
+        </div>
+        <div class="content">
+            <div class="content_left">
+                CONTENT LEFT
+            </div>
+            <div class="content_right">
+                CONTENT RIGHT
+            </div>
+        </div>
+    </body>
+
+</html>
